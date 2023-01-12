@@ -1,0 +1,128 @@
+.hello-wrapper{
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hello-img{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hello-color{
+  color: var(--pink);
+}
+
+.content{
+  width: 10px;
+  height: 10px;
+}
+
+.content-circle{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+  cursor: pointer;
+  border: 10px solid var(--pink);
+  text-decoration: none;
+  border-radius: 50%;
+  position: relative;
+} 
+
+.content:hover .content-circle{
+  animation-play-state: paused;
+}
+
+@keyframes circle{
+  0%{
+    transform: translateY(-8px);
+  }
+  100%{
+    transform: translateY(8px);
+  }
+}
+
+.github{
+  animation: circle 2s ease-in-out infinite alternate-reverse;
+  top: calc(50% - 20rem);
+  right: 25rem;
+  border-color: var(--github-bg);
+}
+
+.inst{
+  animation: circle 2s ease-in-out infinite alternate;
+  top: calc(50% - 8rem);
+  left: 14rem;
+  border-color: var(--inst-bg);
+}
+
+.tel{
+  animation: circle 2s ease-in-out infinite alternate-reverse;
+  top: calc(50% - 35rem);
+  left: 25rem;
+  border-color: var(--tel-bg);
+}
+
+.glow-button {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px var(--pink) inset, 0 0 0 0 var(--pink);
+  font-family: var(--inter), sans-serif;
+  font-weight: bold;
+  font-size: large;
+  color: var(--blye);
+  transition: .15s ease-in-out;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 10px 0 var(--pink) inset, 0 0 10px 4px var(--pink);
+  color: var(--pink);
+}
+
+.content-img{
+  width: 20px;
+  height:20px;
+}
+
+@media (max-width: 768px) {
+  .content.active{
+    display: none;
+  }
+  .tel{
+    animation: circle 2s ease-in-out infinite alternate-reverse;
+    top: calc(50% - 8rem);
+    left: 14rem;
+    border-color: var(--tel-bg);
+  }
+
+  .inst{
+    animation: circle 2s ease-in-out infinite alternate;
+    top: calc(50% - 18rem);
+    left: 14rem;
+    border-color: var(--inst-bg);
+  }
+  .github{
+    animation: circle 2s ease-in-out infinite alternate-reverse;
+    top: calc(50% - 25rem);
+    right: 18rem;
+    border-color: var(--github-bg);
+  }
+  .hello-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

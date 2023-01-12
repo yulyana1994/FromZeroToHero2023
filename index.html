@@ -8,110 +8,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-hello-section.css">
+    <link rel="stylesheet" href="./css/style-header-section.css">
+    <link rel="stylesheet" href="./css/style-skills-section.css">
+    <link rel="stylesheet" href="./css/style-projects-section.css">
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header_wrapper">
-            <img class="header_img" src="./assets/png/dayNight.png" alt="changeTheme" >
-            <nav class="header_navigation">
+        <div class="wrapper header-wrapper">
+            <img class="change-theme" src="./assets/png/dayNight.png" alt="sun" >
+            <nav class="header-navigation">
                 <ul class="navigation">
-                    <li class="navigation_link"> <a class="nav-link" href="#contact">Contact</a> </li>
-                    <li class="navigation_link"> <a class="nav-link" href="#about">About me</a> </li>
-                    <li class="navigation_link"> <a class="nav-link" href="#skills">Skills</a> </li>
-                    <li class="navigation_link"> <a class="nav-link" href="#projects">Projects</a> </li>
+                    <li class="navigation-link"> <a class="nav-link" href="#contact">Contact</a> </li>
+                    <li class="navigation-link"> <a class="nav-link" href="#about">About me</a> </li>
+                    <li class="navigation-link"> <a class="nav-link" href="#skills">Skills</a> </li>
+                    <li class="navigation-link"> <a class="nav-link" href="#projects">Projects</a> </li>
                 </ul>
             </nav>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <main>
         <section class="hello">
-            <div class="wrapper hello_wrapper" id="contact">
-                <img class="hello_img" src="./assets/jpg/i.jpg" alt="iam">
+            <div class="wrapper hello-wrapper" id="contact">
+                <img class="hello-img" src="./assets/jpg/i.jpg" alt="iam">
                 <ul class="content">
-                    <li class="content__circle github"><a href="https://github.com/yulyana1994"><img class="content_img"  src="./assets/png/GitHub-Mark.png" alt="github"> </a></li>
-                    <li class="content__circle inst"><a href="https://www.instagram.com/yulianna.shulzhenko"><img class="content_img"  src="./assets/png/inst.png" alt="inst"> </a></li>
-                    <li class="content__circle tel"><a href="tel:+375292450360"><img class="content_img"  src="./assets/png/tel.png" alt="inst"> </a></li>
+                    <li class="content-circle github"><a href="https://github.com/yulyana1994"><img class="content-img"  src="./assets/png/GitHub-Mark.png" alt="github"> </a></li>
+                    <li class="content-circle inst"><a href="https://www.instagram.com/yulianna.shulzhenko"><img class="content-img"  src="./assets/png/inst.png" alt="inst"> </a></li>
+                    <li class="content-circle tel"><a href="tel:+375292450360"><img class="content-img"  src="./assets/png/tel.png" alt="inst"> </a></li>
                 </ul>
-                <div class="hello_text">
-                    <h2>Hi I'm <span class="hello_color">Yulianna</span> :)</h2>
-                    <h2> This summary is especially for the <span class="hello_color">"JS From Zero To Hero 2023"</span> team :)</h2>
+                <div class="hello-text">
+                    <h2>Hi I'm <span class="hello-color">Yulianna</span> :)</h2>
+                    <h2> This CV specially for the <span class="hello-color">"JS From Zero To Hero 2023"</span> team :)</h2>
                 </div>
-                <div class="hello_btns">
-                    <a class="glow-button" href="./content/Шульженко Юлианна Сергеевна.pdf" download>Download CV <img width="20px" height="20px" src="./assets/png/download.png" alt="dw"> </a>
+                <div class="hello-btns">
+                    <a class="glow-button" href="./content/Шульженко Юлианна Сергеевна.pdf" download>Download CV <img class="content-img" width="20px" height="20px" src="./assets/png/download.png" alt="dw"> </a>
                     <a class="glow-button" href="mailto:yulianna.zhitkovich@mail.ru">Email me</a>
                 </div>
             </div>
         </section>
-        <section class="about_me">
-            <div class="wrapper section_wrapper" id="about">
-                <span class="section_border"> </span>
-                <h1 class='section-title'>About me</h1>
-                <span class="section_border"> </span>
-            </div>
-            <div class="text_block">
-                <p class="about_text">I`m energetic, hardworking and easy to learn. I`m really motivated to take up this position because IT sphere is very perspective and challenging for me. I used to work for a bank as well as some distribution company as an economist but I decided to quit looking for new opportunities.  
-                    Now I`m on a maternity leave that gives me a lot of time for studying frontend skill.</p>
-                <p class="about_text">I already have some background knowledge in front-end development. I`ve taken up a course in front-end development "Result School" in December 2022</p>
-                <p class="about_text">Internship is a good entry-level position for me because your company has experienced mentors. It means mentors can teach a lot. And in my turn I hope to be useful for your company as well</p>  
-                <p class="about_text">In my free time I study specialised literature in IT, l learn English, do sports,spend time with my family</p> 
-            </div>
-        </section>
-        <section class="skills">
-            <div class="wrapper section_wrapper" id="skills">
-                <span class="section_border"> </span>
-                <h1 class='section-title'>Skills</h1>
-                <span class="section_border"> </span>
-            </div>
-            <div class="skills_content">
-                <p class="skills_text">I have basic knowledge:</p>
-                <div class="skills_block">
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/html.png" alt="html">
-                        <p class="skills_text">HTML</p>
-                    </div>
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/css.png" alt="css">
-                        <p class="skills_text">CSS</p>
-                    </div>
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/sass.png" alt="sass">
-                        <p class="skills_text">Sass</p>
-                    </div>
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/figma.png" alt="figma">
-                        <p class="skills_text">Figma</p>
-                    </div>
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/git.png" alt="git">
-                        <p class="skills_text">Git</p>
-                    </div>
-                    <div class="skills_block_item">
-                        <img class="skills_img" src="./assets/skills/react.png" alt="react">
-                        <p class="skills_text">React</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="projects">
-            <div class="wrapper section_wrapper" id="projects">
-                <span class="section_border"> </span>
-                <h1 class='section-title'>Projects</h1>
-                <span class="section_border"> </span>
+        <section class="about-me wrapper">
+            <div class="section-wrapper" id="about">
+                <span class="section-border"> </span>
+                <h1 class="section-title">About me</h1>
+                <span class="section-border"> </span>
             </div>
             <div>
-                <div class="projects_content">
-                    <a class="projects_link " href="https://yulyana1994.github.io/toys/">Toys store made with React, Rest API <img class="projects_img" src="./assets/png/toys.png" alt="toys">
+                <p class="simple-text">I`m energetic, hardworking and easy to learn. I`m really motivated to take up this position because IT sphere is very perspective and challenging for me. I used to work for a bank as well as some distribution company as an economist but I decided to quit looking for new opportunities.  
+                    Now I`m on a maternity leave that gives me a lot of time for studying frontend skill.</p>
+                <p class="simple-text">I already have some background knowledge in front-end development. I`ve taken up a course in front-end development "Result School" in December 2022</p>
+                <p class="simple-text">Internship is a good entry-level position for me because your company has experienced mentors. It means mentors can teach a lot. And in my turn I hope to be useful for your company as well. In my free time I study specialised literature in IT, l learn English(my English level is B1), do sports, spend time with my family</p>  
+            </div>
+        </section>
+        <section class="skills wrapper">
+            <div class=" section-wrapper" id="skills">
+                <span class="section-border"> </span>
+                <h1 class='section-title'>Skills</h1>
+                <span class="section-border"> </span>
+            </div>
+            <div class="skills-content">
+                <p class="simple-text">I have basic knowledge:</p>
+                <div class="skills-block">
+                    <div class="skills-block-item">
+                        <img class="skills-img" src="./assets/skills/html.png" alt="html">
+                        <p class="simple-text">HTML</p>
+                    </div>
+                    <div class="skills-block_item">
+                        <img class="skills-img" src="./assets/skills/css.png" alt="css">
+                        <p class="simple-text">CSS</p>
+                    </div>
+                    <div class="skills-block-item">
+                        <img class="skills-img" src="./assets/skills/sass.png" alt="sass">
+                        <p class="simple-text">Sass</p>
+                    </div>
+                    <div class="skills-block-item">
+                        <img class="skills-img" src="./assets/skills/figma.png" alt="figma">
+                        <p class="simple-text">Figma</p>
+                    </div>
+                    <div class="skills-block-item">
+                        <img class="skills-img" src="./assets/skills/git.png" alt="git">
+                        <p class="simple-text">Git</p>
+                    </div>
+                    <div class="skills-block-item">
+                        <img class="skills-img" src="./assets/skills/react.png" alt="react">
+                        <p class="simple-text">React</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects wrapper">
+            <div class="section-wrapper" id="projects">
+                <span class="section-border"> </span>
+                <h1 class='section-title'>Projects</h1>
+                <span class="section-border"> </span>
+            </div>
+            <div>
+                <div class="projects-content">
+                    <a class="projects-link" href="https://yulyana1994.github.io/toys/">Toys store made with React, Rest API <img class="projects-img" src="./assets/png/toys.png" alt="toys">
                     </a>
                 </div>
-                <div class="projects_content">
-                    <a class="projects_link" href="https://yulyana1994.github.io/my-projects/js30-eco-sounds/">Eco-sounds project made with JavaScript <img class="projects_img" src="./assets/png/eco.png" alt="eco">
+                <div class="projects-content">
+                    <a class="projects-link" href="https://yulyana1994.github.io/my-projects/js30-eco-sounds/">Eco-sounds made with JavaScript <img class="projects-img" src="./assets/png/eco.png" alt="eco">
                     </a>
                 </div>
             </div>
         </section>  
     </main>
-    <footer></footer>
-    
+    <footer>
+        <div class="wrapper footer">
+            <p class="simple-text">Made by Yulyana Shulzhenko</p>
+        </div>
+    </footer>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>
