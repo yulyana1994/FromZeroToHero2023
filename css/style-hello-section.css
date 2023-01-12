@@ -106,17 +106,30 @@
   .content.active{
     display: none;
   }
+  .content-circle{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    cursor: pointer;
+    border: 10px solid var(--pink);
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+  } 
   .tel{
     animation: circle 2s ease-in-out infinite alternate-reverse;
     top: calc(50% - 8rem);
     left: 14rem;
     border-color: var(--tel-bg);
   }
-
   .inst{
     animation: circle 2s ease-in-out infinite alternate;
     top: calc(50% - 18rem);
-    left: 14rem;
+    left: 13rem;
     border-color: var(--inst-bg);
   }
   .github{
