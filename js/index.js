@@ -7,3 +7,9 @@ check.addEventListener("click", function () {
   menu.classList.toggle("active");
   content.classList.toggle("active");
 });
+
+let changeTheme = document.querySelector(".change-theme");
+let body = document.querySelector("body");
+changeTheme.addEventListener("click", function () {
+  body.classList.toggle("dark-theme");
+});

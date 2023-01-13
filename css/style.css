@@ -6,7 +6,9 @@
 
 :root {
     --blye: #041a65;
+    --dark: rgb(14, 15, 15);
     --white: whitesmoke;
+    --gold:gold;
     --pink: #E12179;
     --inika: "Inika", "Verdana", sans-serif;
     --inter: "Inter", "Verdana", sans-serif;
@@ -16,11 +18,31 @@
 }
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body{
-    background-color: var(--white);
+  background-color: var(--white);
+  color: var(--blye);
+}
+
+
+.dark-theme{
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.dark-theme .section-border{
+  background-color: var(--white);
+}
+
+.dark-theme .header-navigation{
+  background-color: var(--dark);
+ 
+}
+
+.dark-theme .menu-btn span{
+  background-color: var(--white);
 }
 
 h2{
@@ -28,7 +50,6 @@ h2{
   font-size: 2.9rem;
   line-height: 5rem;
   text-align: center;
-  color: var(--blye);
 }
 
 .wrapper {
@@ -42,7 +63,6 @@ h2{
   text-align: center;
   font-size: 1.8rem;
   line-height: 3.0rem;
-  color: var(--blye);
 }
 
 .section-wrapper{
@@ -59,7 +79,6 @@ h2{
   font-weight: bold;
   font-size: 3.0rem;
   line-height: 5.0rem;
-  color: var(--blye);
 }
 
 .section-border{
@@ -70,11 +89,12 @@ h2{
 }
 
 .footer{
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 @media (max-width: 768px) {
   .wrapper {
+    max-width: 768px;
     padding: 0 10px;
   }
 }
