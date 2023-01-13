@@ -38,11 +38,18 @@ body{
 
 .dark-theme .header-navigation{
   background-color: var(--dark);
- 
+}
+
+.dark-theme .glow-button{
+  color: var(--white);
 }
 
 .dark-theme .menu-btn span{
   background-color: var(--white);
+}
+
+.dark-theme .container-slaider{
+  background-color: var(--dark);
 }
 
 h2{
@@ -53,8 +60,8 @@ h2{
 }
 
 .wrapper {
-    max-width: 1200px;
-    padding: 0 20px;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 .simple-text{

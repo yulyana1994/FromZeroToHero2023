@@ -35,6 +35,7 @@
   text-decoration: none;
   border-radius: 50%;
   position: relative;
+  left: 0;
 } 
 
 .content:hover .content-circle{
@@ -53,7 +54,7 @@
 .github{
   animation: circle 2s ease-in-out infinite alternate-reverse;
   top: calc(50% - 20rem);
-  right: 25rem;
+  left: -20rem; 
   border-color: var(--github-bg);
 }
 
@@ -71,6 +72,11 @@
   border-color: var(--tel-bg);
 }
 
+.content-img{
+  width: 20px;
+  height:20px;
+}
+
 .glow-button {
   text-decoration: none;
   text-align: center;
@@ -78,7 +84,8 @@
   padding: 15px 30px;
   margin: 10px 20px;
   border-radius: 10px;
-  box-shadow: 0 0 40px 40px var(--pink) inset, 0 0 0 0 var(--pink);
+  border: none;
+  box-shadow: 0 0 40px 40px var(--inst-bg) inset, 0 0 0 0 var(--pink);
   font-family: var(--inter), sans-serif;
   font-weight: bold;
   font-size: large;
@@ -91,11 +98,6 @@
   color: var(--pink);
 }
 
-.content-img{
-  width: 20px;
-  height:20px;
-}
-
 @media (max-width: 768px) {
   .hello-img{
     width: 250px;
@@ -103,7 +105,7 @@
     border-radius: 50%;
     object-fit: cover;
   }
-  .content.active{
+  .content.unactive{
     display: none;
   }
   .content-circle{
@@ -135,7 +137,7 @@
   .github{
     animation: circle 2s ease-in-out infinite alternate-reverse;
     top: calc(50% - 25rem);
-    right: 18rem;
+    left: -14rem;
     border-color: var(--github-bg);
   }
   .hello-btns{
